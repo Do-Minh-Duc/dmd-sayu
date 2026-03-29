@@ -1,5 +1,5 @@
 class NhanVien:
-    LUONG_MAX = 360000000
+    LUONG_MAX = 10000000
     def __init__(self,tenNhanVien="",luongCoBan=0,heSoLuong=0.0):
         self.__tenNhanVien=tenNhanVien
         self.__luongCoBan=luongCoBan
@@ -33,7 +33,7 @@ class NhanVien:
             self.set__heSoLuong(self.__heSoLuong+hesotangthem)
             print(f'Lương mới= {self.get__luongCoBan()} x {self.get__heSoLuong()}= {luongMoi}')
          
-nv1=NhanVien("An",3600000,2.5)
+nv1=NhanVien("Sayu",100000,2.5)
 nv1.inTTin()
 nv1.tangLuong()
 nv1.set__heSoLuong(3.6)
